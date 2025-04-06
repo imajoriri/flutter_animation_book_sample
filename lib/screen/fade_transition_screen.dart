@@ -19,6 +19,9 @@ class _FadeTransitionScreenState extends State<FadeTransitionScreen>
       duration: const Duration(milliseconds: 500),
       vsync: this,
     );
+
+    // デフォルトで非表示のため、1.0にして表示する
+    _controller.value = 1.0;
   }
 
   @override
