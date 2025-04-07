@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screen/animated_opacity_screen.dart';
 import 'screen/fade_transition_screen.dart';
+import 'screen/scale_animation_controller_screen.dart';
+import 'screen/animated_builder_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +63,26 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const FadeTransitionScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("手動フェードアニメーション"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const ScaleAnimationControllerScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedBuilder"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedBuilderScreen(),
                 ),
               );
             },
