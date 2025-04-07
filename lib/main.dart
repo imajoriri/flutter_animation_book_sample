@@ -3,6 +3,9 @@ import 'screen/animated_opacity_screen.dart';
 import 'screen/fade_transition_screen.dart';
 import 'screen/scale_animation_controller_screen.dart';
 import 'screen/animated_builder_screen.dart';
+import 'screen/checkbox_screen.dart';
+import 'screen/show_modal_bottom_sheet_screen.dart';
+import 'screen/tween_animation_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -83,6 +86,34 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const AnimatedBuilderScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("チェックボックス"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const CheckboxScreen()),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("ボトムシート"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const ShowModalBottomSheetScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("Tweenアニメーション"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const TweenAnimationScreen(),
                 ),
               );
             },
