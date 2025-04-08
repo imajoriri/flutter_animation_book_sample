@@ -6,6 +6,23 @@ import 'screen/animated_builder_screen.dart';
 import 'screen/checkbox_screen.dart';
 import 'screen/show_modal_bottom_sheet_screen.dart';
 import 'screen/tween_animation_screen.dart';
+import 'screen/custom_tween_screen.dart';
+import 'screen/sequence_animation_screen.dart';
+import 'screen/chain_animation_screen.dart';
+import 'screen/animated_position_screen.dart';
+import 'screen/sequential_animation_screen.dart';
+import 'screen/color_transition_screen.dart';
+import 'screen/animated_list_screen.dart';
+import 'screen/animated_container_screen.dart';
+import 'screen/animated_positioned_screen.dart';
+import 'screen/animated_padding_screen.dart';
+import 'screen/animated_size_screen.dart';
+import 'screen/animated_switcher_screen.dart';
+import 'screen/animated_cross_fade_screen.dart';
+import 'screen/animated_default_text_style_screen.dart';
+import 'screen/animated_physical_model_screen.dart';
+import 'screen/animated_rotation_screen.dart';
+import 'screen/animated_scale_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -114,6 +131,176 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const TweenAnimationScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("カスタムTweenデモ"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const CustomTweenScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("TweenSequenceデモ"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const SequenceAnimationScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("Chain Animationデモ"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const ChainAnimationScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("左右移動アニメーション"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedPositionScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedPositioned"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedPositionedScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("順次アニメーション"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const SequentialAnimationScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("カラートランジション"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const ColorTransitionScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("アニメーションリスト"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedListScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedContainer"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedContainerScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedPadding"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedPaddingScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedSize"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedSizeScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedSwitcher"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedSwitcherScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedCrossFade"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedCrossFadeScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedDefaultTextStyle"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedDefaultTextStyleScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedPhysicalModel"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedPhysicalModelScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedRotation"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedRotationScreen(),
+                ),
+              );
+            },
+          ),
+          _ListTile(
+            title: const Text("AnimatedScale"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const AnimatedScaleScreen(),
                 ),
               );
             },
